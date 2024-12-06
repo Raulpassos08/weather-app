@@ -6,6 +6,11 @@
         <img src="../../../assets/cold1.jpg"
         *ngIf="weatherDatasInput.main.temp <= 15"
         >
+
+        <div class="weather-data">
+            <div class="location">{{weatherDatasInput.name}}</div>
+            <div class="temperature">{{weatherDatasInput.main.temp | number: "1.0-0"}}</div>
+        </div>
     </div>
 
     <div class="lower-data">
